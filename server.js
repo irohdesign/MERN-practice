@@ -16,7 +16,8 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT);
 
 mongoose.connect(
-    process.env.MONDODB_URI || "mongodb://localhost/mern", {
-        useMongoClient: true
+    process.env.MONGODB_URI || "mongodb://localhost/mern",
+    {
+      useMongoClient: true
     }
-);
+  );
